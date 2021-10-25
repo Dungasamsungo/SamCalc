@@ -68,7 +68,6 @@ public class Calculator implements ActionListener{
         panel.setBounds(50,100,300,300);
         panel.setLayout(new GridLayout(4,4,10,10));
         
-
         panel.add(numberButtons[1]);
 		panel.add(numberButtons[2]);
 		panel.add(numberButtons[3]);
@@ -87,6 +86,8 @@ public class Calculator implements ActionListener{
 		panel.add(divButton);
 
 
+       
+
         frame.add(panel);
         frame.add(delButton);
         frame.add(clrButton);
@@ -95,13 +96,15 @@ public class Calculator implements ActionListener{
 
     }
 
-    public static void main(String[] args) {
-        
-    }
+   
 
     @Override
     public void actionPerformed(ActionEvent e) {
         
+        for (int i =0; i <10; i++);
+            if(e.getSource() == numberButtons[i]){
+                
+            }
     }
 
     
