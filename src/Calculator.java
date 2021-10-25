@@ -54,7 +54,7 @@ public class Calculator implements ActionListener{
              functionButtons[i].setFocusable(false);
          }
 
-         for (int i =0; i<8; i++){
+         for (int i =0; i<10; i++){
             numberButtons[i]= new JButton(String.valueOf(i));
             numberButtons[i].addActionListener(this);
             numberButtons[i].setFont(myFont);
@@ -69,23 +69,22 @@ public class Calculator implements ActionListener{
         panel.setLayout(new GridLayout(4,4,10,10));
         
         panel.add(numberButtons[1]);
-		panel.add(numberButtons[2]);
-		panel.add(numberButtons[3]);
-		panel.add(addButton);
-		panel.add(numberButtons[4]);
-		panel.add(numberButtons[5]);
-		panel.add(numberButtons[6]);
-		panel.add(subButton);
-		panel.add(numberButtons[7]);
-		panel.add(numberButtons[8]);
-		panel.add(numberButtons[9]);
-		panel.add(mulButton);
-		panel.add(decButton);
-		panel.add(numberButtons[0]);
-		panel.add(equButton);
-		panel.add(divButton);
-
-
+        panel.add(numberButtons[2]);
+        panel.add(numberButtons[3]);
+        panel.add(addButton);
+        panel.add(numberButtons[4]);
+        panel.add(numberButtons[5]);
+        panel.add(numberButtons[6]);
+        panel.add(subButton);
+        panel.add(numberButtons[7]);
+        panel.add(numberButtons[8]);
+        panel.add(numberButtons[9]);
+        panel.add(mulButton);
+        panel.add(decButton);
+        panel.add(numberButtons[0]);
+        panel.add(equButton);
+        panel.add(divButton);
+	
        
 
         frame.add(panel);
@@ -101,10 +100,10 @@ public class Calculator implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         
-        for (int i =0; i <10; i++);
-            if(e.getSource() == numberButtons[i]){
-                
-            }
+       // for (int i =0; i <10; i++);
+         //   if(e.getSource() == numberButtons[i]){
+
+         //   }
     }
 
     
